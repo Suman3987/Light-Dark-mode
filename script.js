@@ -1,4 +1,7 @@
-const button = document.getElementsByClassName("btn");
-const container = document.getElementsByClassName("container");
+const btn = document.querySelector(".btn");
+const container = document.querySelector(".container");
 
-btn.onclick;
+btn.onclick = function () {
+  this.classList.toggle("active");
+  container.classList.toggle("active");
+};
